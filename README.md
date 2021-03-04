@@ -24,7 +24,7 @@ Aucun filtrage "RC" n'est nécessaire avec le bouton poussoir car les faux-rebon
 
 ## script MicroPython
 Avant d'installer le scipt micoPython qui gère l'anneau Neopixel il faut d'abord configurer le Raspberry PICO en suivant [ce guide](https://www.papsdroid.fr/post/hello-pico).
-Le script est conçu à partir de l'exemple fourni par Raspberry concernant le [SDK microPython](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf) sur le contrôle Neopixel.
+Le script **picoLeds.py** dans le dossier /microPython est conçu à partir de l'exemple fourni par Raspberry concernant le [SDK microPython](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf) sur le contrôle Neopixel.
 Le bouton poussoir poussoir quand à lui est associé à une fonction callback appelée par interruption losque le Pin relié au bouton se retrouve à la masse (montage pull-up).
 Pour éviter les faux rebonds electro-mécaniques, la fonction callback commence par attendre un certain temps de stabilisation (50ms suffisent), 
 puis elle contrôle que le bouton poussoir est toujours appuyé après ce laps de temps. 
