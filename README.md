@@ -23,21 +23,17 @@ Aucun filtrage "RC" n'est nécessaire avec le bouton poussoir car les faux-rebon
 ![fritzing](_docs/picoLeds_fritzing_web.png)
 
 ## script MicroPython
-Avant d'installer le scipt micoPython qui gère l'anneau Neopixel il faut d'abord configurer le Raspberry PICO en suivant [ce guide](https://www.papsdroid.fr/post/hello-pico).
+Avant d'installer le script micoPython qui gère l'anneau Neopixel il faut d'abord configurer le Raspberry PICO en suivant [ce guide](https://www.papsdroid.fr/post/hello-pico).
 Le script **picoLeds.py** dans le dossier /microPython est conçu à partir de l'exemple fourni par Raspberry concernant le [SDK microPython](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf) sur le contrôle Neopixel.
-Le bouton poussoir poussoir quand à lui est associé à une fonction callback appelée par interruption losque le Pin relié au bouton se retrouve à la masse (montage pull-up).
-Pour éviter les faux rebonds electro-mécaniques, la fonction callback commence par attendre un certain temps de stabilisation (50ms suffisent), 
+Le bouton poussoir quand à lui est associé à une fonction callback appelée par interruption logicielle losque le Pin relié au bouton se retrouve à la masse (montage pull-up). Pour éviter les faux rebonds electro-mécaniques, la fonction callback commence par attendre un certain temps de stabilisation (50ms suffisent), 
 puis elle contrôle que le bouton poussoir est toujours appuyé après ce laps de temps. 
 Dans ce cas, on peut alors coder ce que doit exécuter cette fonction callback en étant sûr d'avoir évité tous les faux-rebonds.
 
 Ce script commence par animer les leds avec un effet arc-en ciel, puis les éteint toutes.
 Chaque appui sur le bouton poussoir va provoquer un effet de "fade out" dans une couleur qui change lors de chaque appui.
+La boucle d'événements (infinite loop) ne fait rien d'autre qu'éxécuter un time.sleep(0.5) qui est nécessaire pour ne pas saturer le processeur (curieusement ne rien faire en boucle infinie c'est le meilleur moyen de saturer un processeur qui va vite se retrouver en surchauffe).
 
 
 ## Prochaine étape 
-création d'un circuit-imprimé et intégration dans une petite lampe de chevet.
-
-
-
-
+création d'un circuit-imprimé pour intégration dans une petite lampe de chevet, et évolution du script pour gérér des ambiances lumineuses.
 
