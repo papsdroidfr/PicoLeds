@@ -37,6 +37,7 @@ La boucle d'événements (infinite loop) ne fait rien d'autre qu'éxécuter un t
 les fichiers GERBER nécessaires à la création du circuit imprimé sont dans le dossier GERBER.
 ![PCB_recto](_docs/PCB_recto.jpg)
 ![PCB_verso](_docs/PCB_verso.jpg)
+
 Il faut commencer par souder au dessus les deux résistance, le bouton poussoir et le connecteur coudé pour y brancher l'anneau de leds.
 En dessous il faut souder le PICO avec ses 2 rangées de pin header déjà soudées: ne pas se tromper de sens la sortie USB du PICO doit être dans le même sens que le connecteur 3 pins pour les leds. Relier l'anneau de leds en utilisant des cables souples dupont femelle/femelle: ne pas se tromper dans les connections +5v, GNG et SIGNAL sinon l'anneau de leds ne survit pas.
 
