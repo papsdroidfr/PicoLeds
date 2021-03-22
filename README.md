@@ -7,11 +7,11 @@ Ce prototype permet de commander les ambiances lumineuses à l'aide d'un bouton 
 ## prototype
 
 ### matériel nécessaire
-* 1 Raspberry PICO 
-* 2 barettes de pin header 20 broches 2,54mm (unutie si le PICO est echeté avec les barettes soudées)
+* 1 Raspberry PICO.
+* 2 barettes de pin header 20 broches 2,54mm (inutile si le PICO est acheté avec les barettes déjà soudées).
 * 1 anneau de 16 leds Neopixel d'Adafruit, sur lequel il faut souder 3 pin headers sur +VCC, SIGNAL et GND.
-* 1 petit bouton poussoir 6mm
-* 1 condensateur polarisé 100nf
+* 1 petit bouton poussoir 6mm.
+* 1 condensateur polarisé 100n (optionnel)
 * 2 resistances 10k ohms.
 * 1 breadbord et des câbles dupont mâles/mâle souples.
 
