@@ -33,7 +33,15 @@ Ce script commence par animer les leds avec un effet arc-en ciel, puis les étei
 Chaque appui sur le bouton poussoir va provoquer un effet de "fade out" dans une couleur qui change lors de chaque appui.
 La boucle d'événements (infinite loop) ne fait rien d'autre qu'éxécuter un time.sleep(0.5) qui est nécessaire pour ne pas saturer le processeur (curieusement ne rien faire en boucle infinie c'est le meilleur moyen de saturer un processeur qui va vite se retrouver en surchauffe).
 
+## Circuit imprimé
+les fichiers GERBER nécessaires à la création du circuit imprimé sont dans le dossier GERBER.
+![PCB_recto](_docs/PCB_recto.jpg)
+![PCB_verso](_docs/PCB_verso.jpg)
+Il faut commencer par souder au dessus les deux résistance, le bouton poussoir et le connecteur coudé pour y brancher l'anneau de leds.
+En dessous il faut souder le PICO avec ses 2 rangées de pin header déjà soudées: ne pas se tromper de sens la sortie USB du PICO doit être dans le même sens que le connecteur 3 pins pour les leds. Relier l'anneau de leds en utilisant des cables souples dupont femelle/femelle: ne pas se tromper dans les connections +5v, GNG et SIGNAL sinon l'anneau de leds ne survit pas.
 
-## Prochaine étape 
-création d'un circuit-imprimé pour intégration dans une petite lampe de chevet, et évolution du script pour gérér des ambiances lumineuses.
+
+## Prochaines étapes 
+* évolution du script pour gérér des ambiances lumineuses.
+* modélisation 3D de la lampe de chevet
 
