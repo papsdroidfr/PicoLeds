@@ -32,13 +32,18 @@ class LedsRGBws2812:
         self.BLACK = (0, 0, 0)
         self.RED = (255, 0, 0)
         self.YELLOW = (255, 150, 0)
+        self.ORANGE = (255, 139, 0)
         self.GREEN = (0, 255, 0)
         self.CYAN = (0, 255, 255)
-        self.BLUE = (0, 0, 255)
-        self.PURPLE = (180, 0, 255)
+        #self.BLUE = (0, 0, 255)
+        self.BLUE = (0, 0, 127)
+        #self.PURPLE = (180, 0, 255)
+        self.PURPLE = (90, 0, 127)
         self.WHITE = (255, 255, 255)
-        self.MORNING = (65,63,20)
-        self.COLORS = (self.MORNING, self.WHITE, self.PURPLE, self.BLUE)
+        #self.WARM = (255, 200, 100)
+        self.WARM = (255, 140 , 40)
+        self.MORNING = (127,70,10)
+        self.COLORS = (self.MORNING, self.WARM, self.PURPLE, self.BLUE)
 
     
         # Create the StateMachine with the ws2812 program, outputting on pin
