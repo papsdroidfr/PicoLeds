@@ -2,6 +2,7 @@
 Lampe de chevet imprimée 3D aux ambiances lumineuses sympas: contrôle d'un anneau de 16 leds Neopixels RGB à l'aide d'un micro-contrôleur Raspberry [PICO](https://www.papsdroid.fr/post/hello-pico). 
 
 ![lampe3D](_docs/lampe3D1.png)
+![lampe3D](_docs/lampe3D2.png)
 
 ## matériel nécessaire
 * 1 Rapsberry PICO, avec les 2 rangées de pin headers soudées
@@ -51,4 +52,5 @@ Cette lampe est une création originale de [DESKGROWN](https://cults3d.com/fr/mo
 
 ## assemblage de la lampe
 Pour assembler la lampe suivez le guide de montage sur mon site: https://www.papsdroid.fr/post/picoleds
+
 
